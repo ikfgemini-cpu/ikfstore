@@ -41,7 +41,7 @@ export default async function HistoryPage() {
         </div>
       ) : (
         <div className="space-y-4">
-          {orders.map(order => (
+          {orders.map((order: any) => (
             <Link href={`/order-status?id=${order.id}`} key={order.id} className="block">
               <div className="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-blue-500 transition-colors shadow-lg flex flex-col md:flex-row justify-between items-start md:items-center">
                 <div className="mb-4 md:mb-0">

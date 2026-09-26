@@ -27,7 +27,7 @@ export default async function AdminOrders() {
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-800">
-              {orders.map(order => (
+              {orders.map((order: any) => (
                 <tr key={order.id} className="hover:bg-gray-800/20">
                   <td className="px-6 py-4 text-sm text-gray-400">{new Date(order.createdAt).toLocaleDateString()}</td>
                   <td className="px-6 py-4 font-mono text-xs text-gray-400">{order.id}</td>

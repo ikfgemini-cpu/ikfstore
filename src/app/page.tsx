@@ -16,7 +16,7 @@ export default async function Home() {
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-        {products.map((product) => (
+        {products.map((product: any) => (
           <Link href={`/product/${product.id}`} key={product.id} className="group">
             <div className="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-blue-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-all duration-300 transform group-hover:-translate-y-1">
               <div className="aspect-square bg-gray-800 flex justify-center items-center overflow-hidden">
